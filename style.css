@@ -290,11 +290,9 @@ body{
   padding-bottom: 8%;
 }
 .download-requestbox h2{
-  font-weight: bold;
   margin-bottom: 5%;
 }
 .download-requestbox h3{
-  font-weight: bold;
   font-size: 20px;
   margin-top: 5;
   margin-bottom: 25;
@@ -326,7 +324,6 @@ body{
   height: 100px;
 }
 #download-trial h2{
-  font-weight: bold;
   margin-bottom: 45px;
 }
 #download-trial h5:link{
