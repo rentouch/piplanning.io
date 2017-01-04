@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PI Planning</title>
+    <meta name="description" content="Software for PI Plannings">
+    <meta name="author" content="Rentouch">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='style.css' rel='stylesheet'>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/ng-pricing.js"</script>
+        <!-- Include Lity for lightbox vimeo preview video -->
+    <link href="js/lity/lity.css" rel="stylesheet">
+    <script src="js/lity/lity.js"></script>
+
+    <div id="banner">
+      <h1>Imagine a PI Planning without communicational problems and administrative efforts.</h1>
+      <a href="//vimeo.com/191018330" class="order_button is_white" data-lity>
+        <img src="images/icons/play.png">
+      </a>
+      <h3>Learn what the PI Planning App is about</h3>
+    </div>
+
+    <div id="seperator" style="background-color: rgb(112, 191, 65);">
+    </div>
+
+    <div id="trial">
+      <h2>DOWNLOAD FREE TRIAL VERSION</h2>
+      <img src="images/icons/piapp-logo.png" style="height: 100px; margin: 30px;">
+      <a href="download.html">
+        <div class="dowload_button">
+          <img src="images/icons/download.png" style="height: 25px;">
+          <div style="text-align: center; float: right; margin-right: 30; margin-top: 2;">Try it free</div>
+        </div>
+      </a>
+    </div>
+
+    <div id="seperator" style="background-color: rgb(243, 144, 25);">
+    </div>
+    <div id="promise">
+      <h1>WHY YOU SHOULD USE THE PI PLANNING APP</h1>
+      <div class="container" style="width: 80%; padding-bottom: 50px; padding-top: 30px;">
+        <div class="row">
+          <div class="col-xs-1">
+            <img src="images/icons/communication.png">
+          </div>
+          <div class="col-sm-11">
+            <h3>Better communication</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1">
+            <img src="images/icons/eye.png">
+          </div>
+          <div class="col-sm-11">
+            <h3>More transparency in distributed settings</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1">
+            <img src="images/icons/sticky.png">
+          </div>
+          <div class="col-sm-11">
+            <h3>Keep the benefits of physical stickies and paper boards</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1">
+            <img src="images/icons/alm.png">
+          </div>
+          <div class="col-sm-11">
+            <h3>Super fast sync to your preferred ALM tool</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1">
+            <img src="images/icons/sync.png">
+          </div>
+          <div class="col-sm-11">
+            <h3>Realtime synced boards across locations</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1">
+            <img src="images/icons/string.png">
+          </div>
+          <div class="col-sm-11">
+            <h3>No more strings on walls</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="seperator" style="background-color: rgb(81, 167, 249);"></div>
+    <div id="pricing" ng-app="pricingApp" ng-controller="pricingCtrl">
+      <h2>PRICING</h2>
+      <div style="margin: 0 auto; width: 302px; height: 40px; ">
+        <div class="price-cloud" ng-class="cloudActive" ng-click="setCloud()">
+          <img src="images/icons/cloud.png" style="height: 30px; padding: 5px;">
+          <div style="padding-top: 5; padding-right: 30px; float: right;">Cloud</div>
+        </div>
+        <div class="price-server" ng-class="serverActive" ng-click="setServer()">
+          <img src="images/icons/server.png" style="height: 30px; padding: 5px;">
+          <div style="padding-top: 5; padding-right: 30px; float: right;">Self-hosted</div>
+        </div>
+      </div>
+
+      <div id="price-box">
+        <h1>{{selectedPrice.price}}</h1>
+        <h4>{{infoLabel}}</h4>
+        <select ng-model="selectedPrice" ng-options="option.size for option in prices">
+        </select>
+        <a href="download.html">
+          <div class="dowload_button">
+            <img src="images/icons/download.png" style="height: 25px;">
+            <div style="text-align: center; float: right; margin-right: 30; margin-top: 2;">Try it free</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+
+    <div id="seperator" style="background-color: rgb(243, 144, 25);"></div>
+    <div class="requestbox" id="request">
+      <h2>YOU HAVE QUESTIONS OR WANT TO GIVE US A VALUABLE FEEDBACK</h2>
+      
+      <div style="container-fluid">
+        <div style="row">
+          <div class="col-sm-6"
+
+            <form id="contact-form">
+              <div class="messages">
+              </div>
+
+              <div class="controls" style="margin-bottom: 5%;">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required" data-error="Please input a name.">
+                  <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="E-Mail" required="required" data-error="Please input an E-Mail.">
+                  <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group">
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+                  <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group">
+                  <textarea type="messages" class="form-control" id="message" name="message" placeholder="Message" rows="6"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                
+                <button type="submit">
+                  <img src="images/icons/send.png" style="height: 25px; padding-left: 5px; float: left;">
+                  <div style="padding-top: 2px;">Send</div>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-sm-6">
+            <h3>+41 32 510 23 83</h3>
+            <h3>innovate@pi-planning.com</h3>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+    </div>
+
+
+    <div id="footer">
+      <div class="container-fluid">
+        <div class='row'>
+          <div class="col-sm-4" style="padding-top: 20px;">
+            <h5>The PI Planning App is powered by</h5>
+            <a href="http://www.rentouch.ch" target="_blank">
+              <img src="images/logos/rentouch-white.png" style="height: 20px;">
+            </a>
+            <a href="https://twitter.com/rentouch" target="_blank">
+              <ul class="list-inline">
+                <li><img src="images/icons/twitter.png" style="height: 30px;"></li>
+                <li>follow us</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-4 left-border">
+            <h5><a href="http://www.agile-board.com" target="_blank">www.agile-board.com</a></h5>
+            <h5><a href="http://www.piplanning.ch" target="_blank">www.piplanning.ch</a></h5>
+          </div>
+          <div class="col-sm-4 left-border">
+            <h4>+41 32 510 23 83</h4>
+            <h5>reach out to us</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

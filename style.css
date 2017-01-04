@@ -1,0 +1,334 @@
+@font-face {
+font-family: "lineweb";
+src: url("fonts/LineWeb-20.otf") format("opentype");
+}
+
+@font-face {
+font-family: "freeserif";
+src: url("fonts/FreeSerif.otf") format("opentype");
+}
+
+@font-face {
+font-family: "freeserif";
+font-weight: bold;
+src: url("fonts/FreeSerifBold.otf") format("opentype");
+}
+
+body{
+  background: rgb(245,245,245);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+
+#seperator{
+  height: 15px;
+}
+
+/* Banner */
+#banner{
+  background-image: url("images/backgrounds/shortvideo.jpg");
+  width: 100%;
+  height: 600px;
+  padding-top: 100px;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+}
+
+#banner h1{
+  color: rgb(220, 220, 220);
+  margin: 0;
+  font-weight: bold;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+#banner img{
+  margin: 20px;
+  height: 100px;
+}
+
+#banner h3{
+  color: rgb(220, 220, 220);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Trial */
+#trial{
+  height: 300px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#trial h2{
+  font-weight: bold;
+}
+
+.dowload_button {
+  border-radius: 50px;
+  padding: 5px 5px;
+  width: 150px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(112, 191, 65);
+  margin: 0 auto;
+}
+
+/* promise */
+#promise{
+  background-color: rgb(250, 247, 238);
+  text-align: center;
+  padding-top: 50px;
+}
+
+#promise h1{
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(243, 144, 25);
+}
+
+#promise h3{
+  text-align: left;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+#promise img{
+  height: 35px; 
+  margin-top: 10px;
+}
+
+
+/* pricing */
+#pricing{
+  height: 500px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#pricing h2{
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.price-cloud{
+  width: 150px;
+  padding: 5px, 5px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(81, 167, 249);
+  border-radius: 50px 0px 0 50px;
+  -moz-border-radius: 50px 0px 0 50px;
+  -webkit-border-radius: 50px 0px 0 50px;
+  float: left;
+}
+.price-cloud.active{
+  background-color: rgb(60, 119, 174);
+}
+
+.price-server{
+  width: 150;
+  padding: 5px, 5px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(81, 167, 249);
+  border-radius: 0 50px 50px 0;
+  -moz-border-radius: 0 50px 50px 0;
+  -webkit-border-radius: 0 50px 50px 0;
+  float: right;
+}
+.price-server.active{
+  background-color: rgb(60, 119, 174);
+}
+
+#price-box{
+  height: 300px;
+  width: 302px;
+  border: solid gray;
+  border-radius: 20px;
+  margin: 0 auto;
+  border-width: 2px;
+  padding-top: 30px;
+}
+
+#pricing select{
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+/* Anfrage box */
+.requestbox{
+  color: black;
+  text-align: center;
+  background-color: rgb(250, 247, 238);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 8%;
+}
+.requestbox h2{
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.requestbox h3{
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 5;
+}
+.requestbox button{
+  border: 1px;
+  border-style: solid;
+  outline:none;
+  border-radius: 50px;
+  padding: 5px 5px;
+  width: 120px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(112, 191, 65);
+  margin: 0 auto;
+}
+
+
+/* footer */
+
+#footer{
+  background-color: rgb(59,59,59);
+  color: white;
+  padding: 20;
+}
+
+#footer p{
+  padding-left: 10px;
+}
+
+#footer h2{
+  font-size: 25px;
+  padding-left: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+#footer h3{
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+#footer li{
+  padding: 0;
+}
+
+.left-border{
+  border-left: 2px solid #FFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.left-border a{
+  padding-left: 10px;
+}
+
+#footer a{
+  color: white;
+  font-size: 14px;
+}
+
+#footer a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+
+/* download-page */
+/* banner */
+#download-banner{
+  background-image: url("images/backgrounds/download.jpg");
+  width: 100%;
+  height: 500px;
+  padding-top: 100px;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+}
+
+#download-banner h1{
+  color: rgb(220, 220, 220);
+  margin: 0;
+  font-weight: bold;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+#download-banner h2{
+  color: rgb(220, 220, 220);
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#download-banner img{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 150;
+}
+
+/* requestbox */
+.download-requestbox{
+  color: black;
+  text-align: center;
+  background-color: rgb(250, 247, 238);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 8%;
+}
+.download-requestbox h2{
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.download-requestbox h3{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5;
+  margin-bottom: 25;
+}
+.download-requestbox form{
+  padding-left: 30%;
+  padding-right: 30%;
+}
+.download-requestbox button{
+  border: 1px;
+  border-style: solid;
+  outline:none;
+  border-radius: 50px;
+  padding: 5px 5px;
+  width: 120px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(112, 191, 65);
+  margin: 0 auto;
+}
+
+/* Download trial versions*/
+#download-trial{
+  height: 300px;
+  text-align: center;
+  margin-top: 50px;
+}
+#download-trial img{
+  height: 100px;
+}
+#download-trial h2{
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+#download-trial h5:link{
+  color: black;
+}
