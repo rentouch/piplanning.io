@@ -1,18 +1,18 @@
 <?php
 
 // configure
-$from = 'piplanning@piplanning.ch'; 
+$from = 'pi-app@piplanning.io'; 
 $sendTo = 'sticky@piplanning.ch';
 $subject = 'Anfrage PI Planning';
-$fields = array('name' => 'Name', 'phone' => 'Phone', 'email' => 'Email'); // array variable name => Text to appear in email
-$okMessage = 'Anfrage wurde gesendet. Wir werden uns bei Ihnen melden';
+$fields = array('name' => 'Name', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in email
+$okMessage = 'Contact form successfully submitted. Thank you, we will get back to you soon!';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
 // let's do the sending
 
 try
 {
-    $emailText = "Eine neue Anfrage von PI Planning\n=============================\n";
+    $emailText = "Eine neue Anfrage von piplanning.io\n=============================\n";
 
     foreach ($_POST as $key => $value) {
 

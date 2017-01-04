@@ -11,7 +11,15 @@
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/webshim/polyfiller.js"></script>
     <script src="js/contact.js"></script>
+
+    <!-- Required to get form validation to work on safari-->
+    <script> 
+        webshim.activeLang('en');
+        webshims.polyfill('forms');
+        webshims.cfg.no$Switch = true;
+    </script>
 
     <div id="download-banner">
       <h1>An app so powerful you have to test it!</h1>

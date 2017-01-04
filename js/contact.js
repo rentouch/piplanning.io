@@ -1,7 +1,6 @@
 $(function () {
-    console.log("initalized")
+    
     $( '#contact-form' ).on('submit', function (e) {
-        console.log("yes we do something")
         if (!e.isDefaultPrevented()) {
             var url = "contact.php";
             console.log($(this).serialize());

@@ -12,11 +12,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/webshim/polyfiller.js"></script>
     <script src="js/contact.js"></script>
-    <script src="js/ng-pricing.js"</script>
-        <!-- Include Lity for lightbox vimeo preview video -->
+    <!-- Include Lity for lightbox vimeo preview video -->
     <link href="js/lity/lity.css" rel="stylesheet">
     <script src="js/lity/lity.js"></script>
+
+    <script src="js/ng-pricing.js"</script>
+
+    <!-- Required to get form validation to work on safari-->
+    <script> 
+        webshim.activeLang('en');
+        webshims.polyfill('forms');
+        webshims.cfg.no$Switch = true;
+    </script>
 
     <div id="banner">
       <h1>Imagine a PI Planning without communicational problems and administrative efforts.</h1>
@@ -132,7 +141,7 @@
       
       <div style="container-fluid">
         <div style="row">
-          <div class="col-sm-6"
+          <div class="col-sm-6">
 
             <form id="contact-form">
               <div class="messages">
