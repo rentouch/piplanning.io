@@ -8,7 +8,7 @@ app.controller("pricingCtrl", function($scope) {
         {size : "5 Teams", price : "$ 3000"},
         {size : "10 Teams", price : "$ 6000"},
         {size : "15 Teams", price : "$ 9000"},
-        {size : "more Teams", price : "$ contact us"},
+        {size : "more Teams", price : "contact us"},
     ];
     serverPrices = [
         {size : "1 Team", price : "$ 900"},
@@ -18,7 +18,7 @@ app.controller("pricingCtrl", function($scope) {
         {size : "5 Teams", price : "$ 4200"},
         {size : "10 Teams", price : "$ 7200"},
         {size : "15 Teams", price : "$ 10200"},
-        {size : "more Teams", price : "$ contact us"},
+        {size : "more Teams", price : "contact us"},
     ];
 
     $scope.setServer = function(){
