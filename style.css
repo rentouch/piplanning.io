@@ -337,6 +337,14 @@ body{
 #download-trial h2{
   margin-bottom: 45px;
 }
+
+#download-trial h3{
+  font-weight: bold;
+  font-size: 15;
+  text-align: left;
+  padding-right: 20%;
+}
+
 #download-trial h5:link{
   color: black;
 }
