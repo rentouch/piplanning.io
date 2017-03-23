@@ -18,10 +18,11 @@
   </head>
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/webshim/polyfiller.js"></script>
     <script src="js/contact.js"></script>
-
+    <script src="js/ng-download.js"></script>
     <!-- Required to get form validation to work on safari-->
     <script> 
         webshim.activeLang('en');
@@ -41,35 +42,45 @@
     <div id="seperator" style="background-color: rgb(112, 191, 65);">
     </div>
 
-    <div id="download-trial">
+    <div id="download-trial" ng-app="downloadApp" ng-controller="downloadCtrl">
       <h2>DOWNLOAD FREE TRIAL BETA VERSION</h2>
-      <div class="row" style="margin-bottom: 50px;">
-        <div class="col-sm-4">
-          <img src="images/icons/ios-logo.png" style="height: 150px;">
+      <div class="row">
+        <div class="col-sm-4"> <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1199517966&mt=8" target="blank">
+          <img src="images/icons/ios-logo.png" style="height: 130px;"><br>
+          <img src="images/icons/Download_on_the_App_Store_Badge_US-UK_135x40.svg" style="width: 130px;">
+          </a>
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-8 text-sm-center text-md-left">
           <h3>We highly recommend you to try the PI Planning App with an iPad. </br></br>
 This way you get at least the intuitive feeling of acting by your finger and you will shortly find out about the importance of using it with a large touchscreen.</h3>
         </div>
-      </div> 
-      <div class="row">
-        <div class="col-sm-4">
-          <a href="downloads/PIPlanning-trial.dmg" onclick="ga('send', 'event', 'Download', 'download-mac-app', 'app');">
-            <img src="images/downloads/macos.png">
-            <h5>macOS 10.10 or later</h5>
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="downloads/PIPlanning-trial.exe" onclick="ga('send', 'event', 'Download', 'download-windows-app', 'app');">
-            <img src="images/downloads/windows.png">
-            <h5>Windows 7 or later</h5>
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="">
-            <img src="images/downloads/linux.png" onclick="ga('send', 'event', 'Download', 'download-linux-app', 'app');">
-            <h5>Ubuntu 16.04 LTS - (on request)</h5>
-          </a>
+      </div>
+      <div ng-click="toggleDesktop()">
+        <h4>Don't have an iPad Click this arrow.</h4>
+        <img src="images/icons/arrow.png" style="height: 15px;">
+      </div>
+      <div id="seperator" style="background-color: rgb(83, 88, 95); height: 2px; margin-top: 8px;"></div>
+      <div ng-show="doShowDesktop">
+        <div><h2>SOME OTHER POSSIBILITIES</h2></div>
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="downloads/PIPlanning-trial.dmg" onclick="ga('send', 'event', 'Download', 'download-mac-app', 'app');">
+              <img src="images/downloads/macos.png">
+              <h5>macOS 10.10 or later</h5>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="downloads/PIPlanning-trial.exe" onclick="ga('send', 'event', 'Download', 'download-windows-app', 'app');">
+              <img src="images/downloads/windows.png">
+              <h5>Windows 7 or later</h5>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="">
+              <img src="images/downloads/linux.png" onclick="ga('send', 'event', 'Download', 'download-linux-app', 'app');">
+              <h5>Ubuntu 16.04 LTS - (on request)</h5>
+            </a>
+          </div>
         </div>
       </div>
     </div>
