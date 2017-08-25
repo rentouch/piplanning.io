@@ -1,24 +1,22 @@
-var app = angular.module("pricingApp", []); 
+var app = angular.module("pricingApp", []);
 app.controller("pricingCtrl", function($scope) {
     cloudPrices = [
-        {size : "1 Team", price : "$ 300"},
-        {size : "2 Teams", price : "$ 600"},
-        {size : "3 Teams", price : "$ 1200"},
-        {size : "4 Teams", price : "$ 1600"},
-        {size : "5 Teams", price : "$ 3000"},
-        {size : "10 Teams", price : "$ 6000"},
-        {size : "15 Teams", price : "$ 9000"},
+        {size : "5 Teams", price : "$ 4000"},
+        {size : "10 Teams", price : "$ 12,500"},
+        {size : "15 Teams", price : "$ 18,750"},
+        {size : "30 Teams", price : "$ 30,000"},
+        {size : "60 Teams", price : "$ 45,000"},
         {size : "more Teams", price : "contact us"},
     ];
     serverPrices = [
-        {size : "1 Team", price : "$ 900"},
-        {size : "2 Teams", price : "$ 1200"},
-        {size : "3 Teams", price : "$ 2000"},
-        {size : "4 Teams", price : "$ 2400"},
-        {size : "5 Teams", price : "$ 4200"},
-        {size : "10 Teams", price : "$ 7200"},
-        {size : "15 Teams", price : "$ 10200"},
-        {size : "more Teams", price : "contact us"},
+        {size : "Up to 10 teams", price : "$ 8,000"},
+        {size : "15 Teams", price : "$ 16,000"},
+        {size : "20 Teams", price : "$ 22,500"},
+        {size : "30 Teams", price : "$ 28,000"},
+        {size : "45 Teams", price : "$ 35,000"},
+        {size : "60 Teams", price : "$ 40,000"},
+        {size : "90 Teams", price : "$ 50,000"},
+        {size : "90 and more", price : "contact us"},
     ];
 
     $scope.setServer = function(){
