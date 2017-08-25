@@ -16,7 +16,7 @@ app.controller("pricingCtrl", function($scope) {
         {size : "45 Teams", price : "$ 35,000"},
         {size : "60 Teams", price : "$ 40,000"},
         {size : "90 Teams", price : "$ 50,000"},
-        {size : "90 and more", price : "contact us"},
+        {size : "91 and more", price : "contact us"},
     ];
 
     $scope.setServer = function(){
