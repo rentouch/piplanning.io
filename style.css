@@ -75,6 +75,9 @@ body{
 #trial h2{
   font-weight: bold;
 }
+#trial h3{
+  font-size: 20px;
+}
 
 .dowload_button {
   border-radius: 50px;

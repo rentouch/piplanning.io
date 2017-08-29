@@ -99,7 +99,7 @@
     <div id="trial">
       <h2>DOWNLOAD FREE TRIAL VERSION</h2>
       <img src="images/icons/piapp-logo.png" style="height: 100px; margin: 30px;">
-      <a href="download.html" onclick="ga('send', 'event', 'Download', 'go-to-download-page', 'internal');">
+      <a href="trial.html" onclick="ga('send', 'event', 'Download', 'go-to-download-page', 'internal');">
         <div class="dowload_button">
           <img src="images/icons/download.png" style="height: 25px;">
           <div style="text-align: center; float: right; margin-right: 30; margin-top: 2;">Try it free</div>
@@ -189,10 +189,10 @@
             </select>
           </div>
         </div>
-        <div style="border-bottom: 2px solid; padding-top: 20px;"></div>
-        <div id="price-box-under">
+        <div style="border-bottom: 2px solid gray; padding-top: 20px;"></div>
+        <div id="price-box-under" ng-hide=showContactUs>
           <h4>Your price</h4>
-          <h2>$ {{price | number:'1.2'}}</h2>
+          <h2>$ {{price | number:'0'}}</h2>
           <h5 ng-show="cloudActive">per year</h5>
           <h5 ng-show="serverActive" ng-click="showInfo()">one-time payment <a class="infolink">?</a></h5>
           <div id="one-time-info-box" ng-show="displayInfoBox" click-outside="hideInfo()" outside-if-not="infolink">
@@ -202,7 +202,11 @@
           <h4>$ {{averagePricePerUser}}</h4>
           <h5>average price per user and PI</h5>
         </div>
-        <a href="download.html">
+        <div id="price-box-under" ng-show=showContactUs>
+          <h4 style="font-weight: bold; text-align: center;">Contact us</h4>
+          <br><br>
+        </div>
+        <a href="trial.html">
           <div class="dowload_button">
             <img src="images/icons/download.png" style="height: 25px;">
             <div style="text-align: center; float: right; margin-right: 30; margin-top: 2;">Try it free</div>
@@ -214,7 +218,7 @@
     <div id="seperator" style="background-color: rgb(245, 211, 40);"></div>
     <div id="videobox">
       <h2>JIRA-SYNCHRONISATION</h2>
-      <iframe src="https://player.vimeo.com/video/230751463" width="760" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/230075905" width="760" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <h3>Learn how smooth the JIRA synchronisation works with the PI Planning Application</h3>
     </div>
 
@@ -275,7 +279,7 @@
       <div class="container-fluid">
         <div class='row'>
           <div class="col-sm-4" style="padding-top: 20px;">
-            <h5>The PI Planning App is powered by</h5>
+            <h5 style="padding-bottom: 5px;">The PI Planning App is powered by</h5>
             <a href="http://www.rentouch.ch" target="_blank">
               <img src="images/logos/rentouch-white.png" style="height: 20px;">
             </a>
@@ -287,6 +291,7 @@
             </a>
           </div>
           <div class="col-sm-4 left-border">
+            <h5><a href="download.html" target="">Downloads</a></h5>
             <h5><a href="http://www.agile-board.com" target="_blank">www.agile-board.com</a></h5>
             <h5><a href="http://www.piplanning.ch" target="_blank">www.piplanning.ch</a></h5>
           </div>

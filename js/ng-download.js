@@ -1,12 +1,12 @@
-var app = angular.module("downloadApp", []); 
+var app = angular.module("downloadApp", []);
 app.controller("downloadCtrl", function($scope) {
-    $scope.doShowDesktop = false;
+    $scope.doShowiOS = false;
 
     $scope.toggleDesktop = function(){
-        if ($scope.doShowDesktop){
-            $scope.doShowDesktop = false;
+        if ($scope.doShowiOS){
+            $scope.doShowiOS = false;
         }else{
-            $scope.doShowDesktop = true;
+            $scope.doShowiOS = true;
         }
     }
 });

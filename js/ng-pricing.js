@@ -11,6 +11,7 @@ app.controller("pricingCtrl", function($scope) {
         {size : "91 and more", price : "contact us"},
     ];
 
+    $scope.showContactUs = false;
     $scope.recalc = function(){
       // CLOUD
       if ($scope.cloudActive){
@@ -21,6 +22,12 @@ app.controller("pricingCtrl", function($scope) {
           return
         }
         teamPrice = 1250
+        $scope.showContactUs = false;
+        if(teamSize>90){
+          $scope.averagePricePerUser = ""
+          $scope.showContactUs = true;
+          return
+        }
         if(teamSize>61){
           teamPrice = 600
         }
@@ -37,8 +44,10 @@ app.controller("pricingCtrl", function($scope) {
       // SERVER
       if(typeof $scope.selectedPrice.price!="number"){
         $scope.averagePricePerUser = ""
+        $scope.showContactUs = true;
         return
       }
+      $scope.showContactUs = false;
       $scope.price = $scope.selectedPrice.price
       $scope.averagePricePerUser = Math.round($scope.selectedPrice.price/$scope.selectedPrice.teams/40)
     }
@@ -49,6 +58,7 @@ app.controller("pricingCtrl", function($scope) {
         $scope.prices = serverPrices;
         $scope.selectedPrice = $scope.prices[0]
         $scope.recalc()
+        $scope.showContactUs = false;
     }
 
     $scope.setCloud = function(){
@@ -56,6 +66,7 @@ app.controller("pricingCtrl", function($scope) {
         $scope.serverActive = ""
         $scope.selectedTeamSize = 10
         $scope.recalc()
+        $scope.showContactUs = false;
     }
 
     $scope.displayInfoBox = false;
