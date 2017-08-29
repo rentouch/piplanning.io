@@ -64,7 +64,7 @@ app.controller("pricingCtrl", function($scope) {
     $scope.setCloud = function(){
         $scope.cloudActive = "active";
         $scope.serverActive = ""
-        $scope.selectedTeamSize = 10
+        $scope.selectedTeamSize = 5
         $scope.recalc()
         $scope.showContactUs = false;
     }
