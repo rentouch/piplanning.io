@@ -31,7 +31,7 @@ body{
 }
 
 .landing_header_image{
-  position: absolute; 
+  position: absolute;
   background-image: url("images/backgrounds/header.jpg");
   background-position: center center;
   background-size: cover;
@@ -41,13 +41,13 @@ body{
 }
 
 .head-content-box{
-  z-index:100; 
-  width:100%; 
-  position:absolute; 
-  color: white; 
-  text-align: center; 
-  margin-left: auto; 
-  margin-right: auto; 
+  z-index:100;
+  width:100%;
+  position:absolute;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 20;
 }
 
@@ -106,14 +106,14 @@ body{
 }
 
 #promise img{
-  height: 35px; 
+  height: 35px;
   margin-top: 10px;
 }
 
 
 /* pricing */
 #pricing{
-  height: 500px;
+  height: 550px;
   text-align: center;
   padding-top: 30px;
 }
@@ -154,7 +154,7 @@ body{
 }
 
 #price-box{
-  height: 300px;
+  height: 340px;
   width: 302px;
   border: solid gray;
   border-radius: 20px;
@@ -163,20 +163,86 @@ body{
   padding-top: 30px;
 }
 
+#price-box-under{
+  text-align: left;
+  width: 60%;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#price-box h2, h3, h4, h5{
+  padding: 0;
+  margin: 0;
+}
+
+#price-box input{
+  font-size: 20;
+  width: 100%;
+}
+
 #pricing select{
   font-family: inherit;
   font-size: 20px;
   font-weight: bold;
   border-radius: 0;
   margin: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.infolink
+{
+    content: '?';
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 2.8ex;
+    height: 2.8ex;
+    /*font-size: 2.5ex;*/
+    /*line-height: 1.8ex;*/
+    border-radius: 50%;
+    margin-right: 4px;
+    padding: 1px;
+    background: white;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+#one-time-info-box{
+  height: 110px;
+  width: 250px;
+  background-color: rgb(247, 247, 144);
+  position: absolute;
+  margin-left: 135px;
+  margin-top: -20px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 4px;
+}
+
+/* Video box */
+#videobox{
+  color: black;
+  background-color: rgb(250, 247, 238);
+  height: 640px;
+  text-align: center;
+  padding-top: 30px;
+}
+#videobox h2{
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+#videobox h3{
+  margin-top: 2%;
 }
 
 /* Anfrage box */
 .requestbox{
   color: black;
   text-align: center;
-  background-color: rgb(250, 247, 238);
+  /*background-color: rgb(250, 247, 238);*/
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 2%;
