@@ -301,6 +301,10 @@ body{
   margin: 0;
 }
 
+#footer h5{
+  padding-bottom: 5px;
+}
+
 #footer li{
   padding: 0;
 }
