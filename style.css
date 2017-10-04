@@ -241,6 +241,25 @@ body{
   margin-top: 2%;
 }
 
+/* Roadmap box */
+#roadmapbox{
+  color: black;
+  background-color: rgb(250, 247, 238);
+  height: 640px;
+  text-align: center;
+  padding-top: 30px;
+}
+#roadmapbox h2{
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+#roadmapbox h3{
+  margin-top: 2%;
+}
+#roadmapbox img{
+  margin-top: 2%;
+}
+
 /* Anfrage box */
 .requestbox{
   color: black;
