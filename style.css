@@ -244,7 +244,7 @@ body{
 /* Roadmap box */
 #roadmapbox{
   color: black;
-  background-color: rgb(250, 247, 238);
+  /*background-color: rgb(250, 247, 238);*/
   height: 640px;
   text-align: center;
   padding-top: 30px;
@@ -264,7 +264,7 @@ body{
 .requestbox{
   color: black;
   text-align: center;
-  /*background-color: rgb(250, 247, 238);*/
+  background-color: rgb(250, 247, 238);
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 2%;
