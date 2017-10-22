@@ -29,11 +29,11 @@
     </script>
     <!--End of Tawk.to Script-->
   </head>
-  <body>
+  <body ng-app="downloadApp" ng-controller="downloadCtrl">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="js/ng-download.js"></script>
     <div id="download-banner" style="height: 350px;">
       <div style="width: 100%; padding-top: 20;">
         <div style="right: 50px; position:absolute;">
@@ -54,7 +54,7 @@
 
     <div id="download-trial">
       <h2>FULL VERSION DOWNLOAD</h2>
-      <h3 style="width: 60%; display: inline-block; text-align:left;">Download and install the latest full version of the PI Planning Application. For a pilot phase we offer free accounts and licences for the period of one PI. So if you don’t have an account yet reach out to us directly to get one: innovate@piplanning.io</h3>
+      <h3 style="width: 60%; display: inline-block; text-align:center;">Download and install the latest full version of the PI Planning Application.</h3>
       <br><br><br>
       <div class="row">
         <div class="col-sm-4">
@@ -76,10 +76,43 @@
           </a>
         </div>
       </div>
+
+      <h3 style="padding-top: 50px; padding-bottom: 25px;">Don't have an account yet? Sign up here for a free trial.</h3>
+      <a href="https://setup.piplanning.io/register" target="_blank">
+        <div class="dowload_button">
+          <img src="images/icons/download.png" style="height: 25px;">
+          <div style="text-align: center; float: right; margin-right: 30; margin-top: 2;">Try it free</div>
+        </div>
+      </a>
+
+      <br><br>
+
+      <div ng-click="toggleDesktop()">
+        <h4>Want to try it on an iPad? Click this arrow.</h4>
+        <img src="images/icons/arrow.png" style="height: 15px;">
+      </div>
+      <div id="seperator" style="background-color: rgb(83, 88, 95); height: 2px; margin-top: 8px;"></div>
+      <div ng-show="doShowiOS">
+        <div><h2>ANOTHER OPTION</h2></div>
+        <div class="row">
+          <div class="col-sm-4"> <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1199517966&mt=8" target="blank">
+            <img src="images/icons/ios-logo.png" style="height: 130px;"><br>
+            <img src="images/icons/Download_on_the_App_Store_Badge_US-UK_135x40.svg" style="width: 130px;">
+            </a>
+          </div>
+          <div class="col-sm-8 text-sm-center text-md-left">
+            <h3>Try the PI Planning App with an iPad. </br></br>
+  This way you get at least the intuitive feeling of acting by your finger and you will shortly find out about the importance of using it with large touchscreens.</h3>
+            <br>
+            <h5>Note: The iOS App is only for testing purposes and thus lacks some of the features of the full version.</h5>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <p style="text-align: center;">For older versions check out: <a href="https://binaries.rentouch.ch" target="_blank">binaries.rentouch.ch</a></p>
+      <div style="height: 40px;"></div>
     </div>
-    <br>
-    <p style="text-align: center;">For older versions check out: <a href="https://binaries.rentouch.ch">binaries.rentouch.ch</a></p>
-    <div style="height: 40px;"></div>
 
     <div id="footer">
       <div class="container-fluid">
