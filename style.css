@@ -95,6 +95,9 @@ body{
   text-align: center;
   padding-top: 50px;
 }
+#customer p{
+  font-weight: normal;
+}
 #customer h1{
   font-size: 26px;
   font-weight: bold;
