@@ -89,9 +89,24 @@ body{
   margin: 0 auto;
 }
 
+/* customer */
+#customer{
+  background-color: rgb(250, 247, 238);
+  text-align: center;
+  padding-top: 50px;
+}
+#customer h1{
+  font-size: 26px;
+  font-weight: bold;
+}
+#customer h3{
+  text-align: left;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
 /* promise */
 #promise{
-  background-color: rgb(250, 247, 238);
   text-align: center;
   padding-top: 50px;
 }
@@ -113,12 +128,12 @@ body{
   margin-top: 10px;
 }
 
-
 /* pricing */
 #pricing{
   height: 550px;
   text-align: center;
   padding-top: 30px;
+  background-color: rgb(250, 247, 238);
 }
 
 #pricing h2{
@@ -228,7 +243,6 @@ body{
 /* Video box */
 #videobox{
   color: black;
-  background-color: rgb(250, 247, 238);
   height: 640px;
   text-align: center;
   padding-top: 30px;
@@ -244,7 +258,7 @@ body{
 /* Roadmap box */
 #roadmapbox{
   color: black;
-  /*background-color: rgb(250, 247, 238);*/
+  background-color: rgb(250, 247, 238);
   height: 640px;
   text-align: center;
   padding-top: 30px;
@@ -264,7 +278,6 @@ body{
 .requestbox{
   color: black;
   text-align: center;
-  background-color: rgb(250, 247, 238);
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 2%;
