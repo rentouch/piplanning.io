@@ -1,7 +1,7 @@
 var app = angular.module("pricingApp", ['angular-click-outside']);
 app.controller("pricingCtrl", function($scope) {
     serverPrices = [
-        {size : "Up to 10 teams", price : 12000, teams:10},
+        {size : "Up to 10 teams", price : 14000, teams:10},
         {size : "15 Teams", price : 21000, teams: 15},
         {size : "20 Teams", price : 28000, teams: 20},
         {size : "30 Teams", price : 39000, teams: 30},
